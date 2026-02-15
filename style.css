@@ -1,1 +1,85 @@
-/* Add your CSS here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(to right, #0071c5, #003c71);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+/* TIMELINE */
+.timeline {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  overflow-x: auto;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  min-width: 260px;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Hover reveal */
+.details {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .details {
+  opacity: 1;
+}
+
+/* FOOTER TEXT */
+.footer-text {
+  text-align: center;
+  padding: 20px;
+  color: #555;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .timeline {
+    flex-direction: column;
+  }
+}
